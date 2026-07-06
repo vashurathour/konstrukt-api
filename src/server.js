@@ -3,7 +3,7 @@ const { server } = require('./app')
 const { connectRedis } = require('./config/redis')
 const pool = require('./config/db')
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8080
 
 const start = async () => {
   try { await pool.query('SELECT 1'); console.log('✅ Database connected') }
